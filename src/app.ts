@@ -19,7 +19,7 @@ app.use(cors())
 const coinsArray = [5, 10, 20, 50, 100]
 
 // ---------------------------------------------------------LogIn----------------------------------------------------------------------------
-app.post("/login/employee", (req, res) => {
+app.post("/login/user", (req, res) => {
   const p = LoginController.UserLogIn(req.body).pipe(take(1)).subscribe(
     {
       next(r) {
