@@ -49,7 +49,7 @@ method: POST
  ```
  6 - url/user/:id
  method: DELETE
-  must bes logged in and update only your account
+  must bes logged in and delete only your account
 
  ```
  
