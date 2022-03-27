@@ -35,8 +35,14 @@ method: POST
  ```
  ```
  4 - url/users/all/:pn
+ pn => pageNumber
   method: GET
  must be logged in
+ res :{
+ data: 10 users,
+ colSize: allUser.count
+ } 
+ 
 
  ```
  ```
@@ -80,8 +86,13 @@ must bes logged in and have the same id in product sellerId
 
 ```
 10 URL/products/all/:pn
+pn => pageNumber
   method: GET
   must be logged in
+  res :{
+ data: 10 products,
+ colSize: allProducts.count
+ } 
 ```
 
 ```
