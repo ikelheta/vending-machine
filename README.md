@@ -8,8 +8,10 @@
 
 
 ## Installation
-1 - npm install -g typescript
-2 - npm instal
+1 - install node
+2 - npm install -g typescript
+3 - npm instal
+4 - npm run dev
 
 ## EndNodes
 ```
