@@ -14,7 +14,7 @@ export class UserController {
       mergeMap((m) => from(bcrypt.hash(m.password, 10))),
       mergeMap((m) => from(UserSchema.create({ ...user, password: m }))),
       map((m) => {
-        return { token: createToken({ ...m }) }
+        return { token: createToken({ ...m }), id : m._id }
       })
     )
   }
