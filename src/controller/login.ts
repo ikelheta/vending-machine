@@ -12,7 +12,7 @@ export class LoginController {
       mergeMap(() => from(UserSchema.findOne({ userName }))),
       tap((t) => user = t),
       mergeMap((m: any) => from(bcrypt.compare(password, m.password))),
-      mergeMap((m) => m ? of({ token: createToken({ ...user }) }) : throwError(() => 401))
+      mergeMap((m) => m ? of({ token: createToken({ ...user }), id: user._id  }) : throwError(() => 401))
     )
   }
   //-----------------------------------------------------------------------------------------------------------------------------------------------------
