@@ -18,7 +18,7 @@
 1 - url/login/user
 method: POST
   body: {userName: string, password: string}
-  res : {token : ""}
+  res : {token : "", id:""}
 ```
 ```
 2 - url/signup
@@ -28,7 +28,7 @@ method: POST
   "password": "",
   "role": ""}
   
-  res : {token: ""}
+  res : {token: "", id:""}
  ```
  ```
  3 - url/user/:id
